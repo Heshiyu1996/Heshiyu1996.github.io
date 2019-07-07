@@ -12,7 +12,7 @@ cd docs/.vuepress/dist
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
 
-echo '# Welcome! ## You can enter my blog by： [https://Heshiyu1996.github.io]('https://Heshiyu1996.github.io')' > README.md
+echo '# Welcome! And You can enter my blog by： [https://Heshiyu1996.github.io]('https://Heshiyu1996.github.io')' > README.md
 
 git init
 git add -A
