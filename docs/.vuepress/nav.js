@@ -5,7 +5,6 @@ module.exports = [
             { text: 'JavaScript', link: '/basis/JavaScript/' },
             { text: 'HTML', link: '/basis/HTML/' },
             { text: 'CSS', link: '/basis/CSS/' },
-            { text: 'TypeScript', link: '/basis/CSS/' },
         ]
     },
     {
