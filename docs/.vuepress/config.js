@@ -10,18 +10,41 @@ const nav = [
     // },
     {
         text: '规范', items: [
-            { text: 'CSS', link: '/standard/css/' },
-            { text: 'JS', link: '/standard/js/' }
+            { text: '基本类', items: [
+                    { text: 'CSS', link: '/standard/css/' }
+                ]
+            },
+            { text: '工具类', items: [
+                    { text: 'Prettier', link: '/standard/prettier/' }
+                ]
+            },
         ]
-    },
-
-    { text: 'GitHub', link: 'https://github.com/Heshiyu1996/Heshiyu1996.github.io' }
+    }
 ]
-const sidebar = {
-    '/blog/': getSidebar('blog'),
-    '/standard/': getSidebar('standard'),
-    '/frame/': getSidebar('frame')
-}
+// const sidebar = {
+//     '/blog/': getSidebar('blog'),
+//     '/standard/': getSidebar('standard'),
+//     '/frame/': getSidebar('frame')
+// }
+
+    const sidebar = [
+        {
+          title: 'Group 1',
+          collapsable: true,
+          children: [
+            '/standard/css/',
+            // '/standard/prettier/',
+          ]
+        },
+        {
+          title: 'Group 2',
+          collapsable: true,
+          children: [
+            // '/standard/css/',
+            '/standard/prettier/',
+          ]
+        }
+    ]
 
 let head = require('./head')
 
@@ -39,6 +62,14 @@ module.exports = {
         nav,
         sidebar,
         sidebarDepth: 2, // 侧边栏显示2级
+
+        lastUpdated: '上次更新', // string | boolean
+
+        repo: 'https://github.com/Heshiyu1996/Heshiyu1996.github.io',
+
+        editLinks: true,
+        editLinkText: '帮助我们改善此页面！',
+        displayAllHeaders: false // 展开所有页面的标题
     }
 };
 
@@ -49,7 +80,7 @@ function getSidebar(barName) {
         ],
         standard: [
             '/standard/css/',
-            '/standard/js/',
+            '/standard/prettier/',
         ]
     }
     return sidebar[barName]
