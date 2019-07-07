@@ -1,5 +1,28 @@
 
-let nav = require('./nav')
+const nav = [
+    { text: '主页', link: '/' },
+    // {
+    //     text: '基础', items: [
+    //         { text: 'JavaScript', link: '/basis/JavaScript/' },
+    //         { text: 'HTML', link: '/basis/HTML/' },
+    //         { text: 'CSS', link: '/basis/CSS/' },
+    //     ]
+    // },
+    {
+        text: '规范', items: [
+            { text: 'CSS', link: '/standard/css/' },
+            { text: 'JS', link: '/standard/js/' }
+        ]
+    },
+
+    { text: 'GitHub', link: 'https://github.com/Heshiyu1996/Heshiyu1996.github.io' }
+]
+const sidebar = {
+    '/blog/': getSidebar('blog'),
+    '/standard/': getSidebar('standard'),
+    '/frame/': getSidebar('frame')
+}
+
 let head = require('./head')
 
 module.exports = {
@@ -14,28 +37,19 @@ module.exports = {
     },
     themeConfig: {
         nav,
-        sidebar: {
-            '/blog/': getSidebar('blog'),
-            // '/frame/': getSidebar('frame'),
-            // '/basis/': getSidebar('basis')
-        },
+        sidebar,
         sidebarDepth: 2, // 侧边栏显示2级
     }
 };
 
 function getSidebar(barName) {
     const sidebar = {
-        // frame: [
-        //     '/frame/',
-        //     '/frame/Vue/',
-        //     '/frame/React/',
-        //     '/frame/Angular/'
-        // ],
         blog: [
             '/blog/'
         ],
-        basis: [
-
+        standard: [
+            '/standard/css/',
+            '/standard/js/',
         ]
     }
     return sidebar[barName]
