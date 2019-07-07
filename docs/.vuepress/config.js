@@ -16,8 +16,8 @@ module.exports = {
         nav,
         sidebar: {
             '/blog/': getSidebar('blog'),
-            '/frame/': getSidebar('frame'),
-            '/basis/': getSidebar('basis')
+            // '/frame/': getSidebar('frame'),
+            // '/basis/': getSidebar('basis')
         },
         sidebarDepth: 2, // 侧边栏显示2级
     }
@@ -25,12 +25,12 @@ module.exports = {
 
 function getSidebar(barName) {
     const sidebar = {
-        frame: [
-            '/frame/',
-            '/frame/Vue/',
-            '/frame/React/',
-            '/frame/Angular/'
-        ],
+        // frame: [
+        //     '/frame/',
+        //     '/frame/Vue/',
+        //     '/frame/React/',
+        //     '/frame/Angular/'
+        // ],
         blog: [
             '/blog/'
         ],
