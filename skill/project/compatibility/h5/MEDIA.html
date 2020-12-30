@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>常用媒体查询兼容方案 | Heshiyu&#39;s Blog</title>
+    <meta name="description" content=" ">
+    <meta name="generator" content="VuePress 1.3.1">
+    <link rel="icon" href="/favicon.png">
+  <link rel="manifest" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="mask-icon" href="/favicon.png" color="#3eaf7c">
+  <meta http-quiv="pragma" cotent="no-cache">
+  <meta http-quiv="expires" cotent="0">
+  <meta http-quiv="pragma" cotent="no-cache, must-revalidate">
+    
+    <link rel="preload" href="/assets/css/0.styles.7633c2a9.css" as="style"><link rel="preload" href="/assets/js/app.65a89ca6.js" as="script"><link rel="preload" href="/assets/js/2.f29da71a.js" as="script"><link rel="preload" href="/assets/js/129.db52353b.js" as="script"><link rel="prefetch" href="/assets/js/10.ebc89002.js"><link rel="prefetch" href="/assets/js/100.b4d2cdbc.js"><link rel="prefetch" href="/assets/js/101.2a441379.js"><link rel="prefetch" href="/assets/js/102.5ac60b9a.js"><link rel="prefetch" href="/assets/js/103.d772d6de.js"><link rel="prefetch" href="/assets/js/104.b92f7f37.js"><link rel="prefetch" href="/assets/js/105.9180eeac.js"><link rel="prefetch" href="/assets/js/106.48ed1bd6.js"><link rel="prefetch" href="/assets/js/107.4bd0524f.js"><link rel="prefetch" href="/assets/js/108.bf1365c7.js"><link rel="prefetch" href="/assets/js/109.b02701bf.js"><link rel="prefetch" href="/assets/js/11.c13c4caa.js"><link rel="prefetch" href="/assets/js/110.4ef10069.js"><link rel="prefetch" href="/assets/js/111.b2a819eb.js"><link rel="prefetch" href="/assets/js/112.6f657cdd.js"><link rel="prefetch" href="/assets/js/113.097402d8.js"><link rel="prefetch" href="/assets/js/114.a7773533.js"><link rel="prefetch" href="/assets/js/115.31961814.js"><link rel="prefetch" href="/assets/js/116.3671260a.js"><link rel="prefetch" href="/assets/js/117.e5152a44.js"><link rel="prefetch" href="/assets/js/118.6d22e43a.js"><link rel="prefetch" href="/assets/js/119.7b87075e.js"><link rel="prefetch" href="/assets/js/12.1445d451.js"><link rel="prefetch" href="/assets/js/120.7657b280.js"><link rel="prefetch" href="/assets/js/121.62cd7313.js"><link rel="prefetch" href="/assets/js/122.69527952.js"><link rel="prefetch" href="/assets/js/123.012c549f.js"><link rel="prefetch" href="/assets/js/124.bc043df7.js"><link rel="prefetch" href="/assets/js/125.0aeb0830.js"><link rel="prefetch" href="/assets/js/126.ed4b07ba.js"><link rel="prefetch" href="/assets/js/127.77e47004.js"><link rel="prefetch" href="/assets/js/128.b997f4f6.js"><link rel="prefetch" href="/assets/js/13.430a6558.js"><link rel="prefetch" href="/assets/js/130.7ad688f0.js"><link rel="prefetch" href="/assets/js/131.73ce6693.js"><link rel="prefetch" href="/assets/js/132.f913fab6.js"><link rel="prefetch" href="/assets/js/133.6e124659.js"><link rel="prefetch" href="/assets/js/134.5d39fce0.js"><link rel="prefetch" href="/assets/js/135.df76cef1.js"><link rel="prefetch" href="/assets/js/136.49c17fd8.js"><link rel="prefetch" href="/assets/js/137.c963605a.js"><link rel="prefetch" href="/assets/js/138.0960be37.js"><link rel="prefetch" href="/assets/js/139.7561af94.js"><link rel="prefetch" href="/assets/js/14.c4c23519.js"><link rel="prefetch" href="/assets/js/140.5b1e0955.js"><link rel="prefetch" href="/assets/js/141.6e812e39.js"><link rel="prefetch" href="/assets/js/142.70c1f944.js"><link rel="prefetch" href="/assets/js/143.30526f1b.js"><link rel="prefetch" href="/assets/js/144.de4cb928.js"><link rel="prefetch" href="/assets/js/145.8314da63.js"><link rel="prefetch" href="/assets/js/146.7e34fe61.js"><link rel="prefetch" href="/assets/js/147.d347a372.js"><link rel="prefetch" href="/assets/js/148.91b524de.js"><link rel="prefetch" href="/assets/js/149.7377742f.js"><link rel="prefetch" href="/assets/js/15.a14f00ac.js"><link rel="prefetch" href="/assets/js/150.a9afd2ce.js"><link rel="prefetch" href="/assets/js/151.61adf142.js"><link rel="prefetch" href="/assets/js/152.a15f492b.js"><link rel="prefetch" href="/assets/js/153.d2cee6f9.js"><link rel="prefetch" href="/assets/js/154.873f2d81.js"><link rel="prefetch" href="/assets/js/155.6f4a84c4.js"><link rel="prefetch" href="/assets/js/156.61ba33b3.js"><link rel="prefetch" href="/assets/js/157.2c8c648a.js"><link rel="prefetch" href="/assets/js/158.d5836763.js"><link rel="prefetch" href="/assets/js/159.54178633.js"><link rel="prefetch" href="/assets/js/16.478cb84e.js"><link rel="prefetch" href="/assets/js/17.0ec5677a.js"><link rel="prefetch" href="/assets/js/18.14d58603.js"><link rel="prefetch" href="/assets/js/19.0b1366e3.js"><link rel="prefetch" href="/assets/js/20.117d1412.js"><link rel="prefetch" href="/assets/js/21.abe24aa9.js"><link rel="prefetch" href="/assets/js/22.722cd643.js"><link rel="prefetch" href="/assets/js/23.4f37818d.js"><link rel="prefetch" href="/assets/js/24.c5bea59b.js"><link rel="prefetch" href="/assets/js/25.2ea169c1.js"><link rel="prefetch" href="/assets/js/26.b98a4fd4.js"><link rel="prefetch" href="/assets/js/27.05de9df1.js"><link rel="prefetch" href="/assets/js/28.90fb3911.js"><link rel="prefetch" href="/assets/js/29.8c68c2f2.js"><link rel="prefetch" href="/assets/js/3.db4d2d0b.js"><link rel="prefetch" href="/assets/js/30.37011b6a.js"><link rel="prefetch" href="/assets/js/31.50fb896d.js"><link rel="prefetch" href="/assets/js/32.988ac9ff.js"><link rel="prefetch" href="/assets/js/33.78e07c85.js"><link rel="prefetch" href="/assets/js/34.5f855160.js"><link rel="prefetch" href="/assets/js/35.096238b1.js"><link rel="prefetch" href="/assets/js/36.fd76455c.js"><link rel="prefetch" href="/assets/js/37.ce7766e3.js"><link rel="prefetch" href="/assets/js/38.c1a5a827.js"><link rel="prefetch" href="/assets/js/39.27b1ef4f.js"><link rel="prefetch" href="/assets/js/4.9d001fc4.js"><link rel="prefetch" href="/assets/js/40.37854300.js"><link rel="prefetch" href="/assets/js/41.76754f35.js"><link rel="prefetch" href="/assets/js/42.0e01d4f6.js"><link rel="prefetch" href="/assets/js/43.ed84031e.js"><link rel="prefetch" href="/assets/js/44.71c89784.js"><link rel="prefetch" href="/assets/js/45.09966fb0.js"><link rel="prefetch" href="/assets/js/46.ef42514c.js"><link rel="prefetch" href="/assets/js/47.ebd96f8e.js"><link rel="prefetch" href="/assets/js/48.f05a4d1c.js"><link rel="prefetch" href="/assets/js/49.ba9c225f.js"><link rel="prefetch" href="/assets/js/5.7ae6c8a4.js"><link rel="prefetch" href="/assets/js/50.78837426.js"><link rel="prefetch" href="/assets/js/51.8d868e0c.js"><link rel="prefetch" href="/assets/js/52.d17af8b3.js"><link rel="prefetch" href="/assets/js/53.7c8cb809.js"><link rel="prefetch" href="/assets/js/54.70181b6d.js"><link rel="prefetch" href="/assets/js/55.9015f413.js"><link rel="prefetch" href="/assets/js/56.b061d11e.js"><link rel="prefetch" href="/assets/js/57.83fe971c.js"><link rel="prefetch" href="/assets/js/58.39a9b9a1.js"><link rel="prefetch" href="/assets/js/59.c96d7058.js"><link rel="prefetch" href="/assets/js/6.17e2a2cf.js"><link rel="prefetch" href="/assets/js/60.544cf086.js"><link rel="prefetch" href="/assets/js/61.b2ec0106.js"><link rel="prefetch" href="/assets/js/62.e2b8d1e4.js"><link rel="prefetch" href="/assets/js/63.6157df7b.js"><link rel="prefetch" href="/assets/js/64.ccda49ed.js"><link rel="prefetch" href="/assets/js/65.da8f39df.js"><link rel="prefetch" href="/assets/js/66.40cc94e6.js"><link rel="prefetch" href="/assets/js/67.7f1424f4.js"><link rel="prefetch" href="/assets/js/68.2ed9ae6a.js"><link rel="prefetch" href="/assets/js/69.bf6264e5.js"><link rel="prefetch" href="/assets/js/7.d9a21c27.js"><link rel="prefetch" href="/assets/js/70.fe73bea0.js"><link rel="prefetch" href="/assets/js/71.6734edf7.js"><link rel="prefetch" href="/assets/js/72.212ef0e9.js"><link rel="prefetch" href="/assets/js/73.f24a7182.js"><link rel="prefetch" href="/assets/js/74.325f0109.js"><link rel="prefetch" href="/assets/js/75.15619ba3.js"><link rel="prefetch" href="/assets/js/76.f42c5bf2.js"><link rel="prefetch" href="/assets/js/77.4bc28314.js"><link rel="prefetch" href="/assets/js/78.74d629b1.js"><link rel="prefetch" href="/assets/js/79.56d81e69.js"><link rel="prefetch" href="/assets/js/8.d8294feb.js"><link rel="prefetch" href="/assets/js/80.fafbf927.js"><link rel="prefetch" href="/assets/js/81.20757e97.js"><link rel="prefetch" href="/assets/js/82.e7aec67a.js"><link rel="prefetch" href="/assets/js/83.4199ce20.js"><link rel="prefetch" href="/assets/js/84.233ee461.js"><link rel="prefetch" href="/assets/js/85.94e19582.js"><link rel="prefetch" href="/assets/js/86.99ee15a8.js"><link rel="prefetch" href="/assets/js/87.0a112635.js"><link rel="prefetch" href="/assets/js/88.05c57f8d.js"><link rel="prefetch" href="/assets/js/89.94013c48.js"><link rel="prefetch" href="/assets/js/9.11a15702.js"><link rel="prefetch" href="/assets/js/90.331bb884.js"><link rel="prefetch" href="/assets/js/91.54712a27.js"><link rel="prefetch" href="/assets/js/92.8691c112.js"><link rel="prefetch" href="/assets/js/93.724e7fc2.js"><link rel="prefetch" href="/assets/js/94.bd37ab36.js"><link rel="prefetch" href="/assets/js/95.bfa036f5.js"><link rel="prefetch" href="/assets/js/96.4ff4071b.js"><link rel="prefetch" href="/assets/js/97.ce72eea3.js"><link rel="prefetch" href="/assets/js/98.d14b037b.js"><link rel="prefetch" href="/assets/js/99.68b4e5e1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7633c2a9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Heshiyu's Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/overview/" class="nav-link">
+  总览
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端积累" class="dropdown-title"><span class="title">前端积累</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/skill/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/skill/js/" class="nav-link">
+  JS
+</a></li><li class="dropdown-subitem"><a href="/skill/web/" class="nav-link">
+  Web/浏览器
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/skill/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/skill/nodejs/" class="nav-link">
+  NodeJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          笔记
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/personal/" class="nav-link">
+  个人笔记
+</a></li><li class="dropdown-subitem"><a href="/skill/project/" class="nav-link router-link-active">
+  项目笔记
+</a></li><li class="dropdown-subitem"><a href="/skill/note/" class="nav-link">
+  读书/参会心得
+</a></li></ul></li><li class="dropdown-item"><h4>
+          前端周边
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/computeracy/" class="nav-link">
+  计算机
+</a></li><li class="dropdown-subitem"><a href="/skill/algorithm/" class="nav-link">
+  算法
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程产出" class="dropdown-title"><span class="title">工程产出</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端规范
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/output/standard/css/" class="nav-link">
+  CSS规范
+</a></li><li class="dropdown-subitem"><a href="/output/standard/js/" class="nav-link">
+  JS规范
+</a></li><li class="dropdown-subitem"><a href="/output/standard/eslint/" class="nav-link">
+  ESLint &amp; Prettier规范
+</a></li><li class="dropdown-subitem"><a href="/output/standard/stylelint/" class="nav-link">
+  Stylelint规范
+</a></li><li class="dropdown-subitem"><a href="/output/standard/git/" class="nav-link">
+  Git规范
+</a></li></ul></li><li class="dropdown-item"><h4>
+          项目沉淀
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/output/fruit/template/" class="nav-link">
+  React工程模板
+</a></li><li class="dropdown-subitem"><a href="/output/fruit/component-lib/" class="nav-link">
+  基于Antd的业务组件库
+</a></li></ul></li><li class="dropdown-item"><h4>
+          前端工程模板
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://github.com/netease-frontend-institute/ehr-react-template/tree/single/js" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  单页项目（react16.9 + webpack4）
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-subitem"><a href="https://github.com/netease-frontend-institute/ehr-react-template/tree/single/ts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  单页项目（react16.9 + webpack4 + Typescript）
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-subitem"><a href="https://github.com/netease-frontend-institute/ehr-react-template/tree/multiple/js" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  多页项目（react16.9 + webpack4）
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></li></ul></div></div><div class="nav-item"><a href="/tool/" class="nav-link">
+  实用工具
+</a></div> <a href="https://github.com/Heshiyu1996" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/overview/" class="nav-link">
+  总览
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端积累" class="dropdown-title"><span class="title">前端积累</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/skill/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/skill/js/" class="nav-link">
+  JS
+</a></li><li class="dropdown-subitem"><a href="/skill/web/" class="nav-link">
+  Web/浏览器
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/skill/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/skill/nodejs/" class="nav-link">
+  NodeJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          笔记
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/personal/" class="nav-link">
+  个人笔记
+</a></li><li class="dropdown-subitem"><a href="/skill/project/" class="nav-link router-link-active">
+  项目笔记
+</a></li><li class="dropdown-subitem"><a href="/skill/note/" class="nav-link">
+  读书/参会心得
+</a></li></ul></li><li class="dropdown-item"><h4>
+          前端周边
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/computeracy/" class="nav-link">
+  计算机
+</a></li><li class="dropdown-subitem"><a href="/skill/algorithm/" class="nav-link">
+  算法
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程产出" class="dropdown-title"><span class="title">工程产出</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端规范
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/output/standard/css/" class="nav-link">
+  CSS规范
+</a></li><li class="dropdown-subitem"><a href="/output/standard/js/" class="nav-link">
+  JS规范
+</a></li><li class="dropdown-subitem"><a href="/output/standard/eslint/" class="nav-link">
+  ESLint &amp; Prettier规范
+</a></li><li class="dropdown-subitem"><a href="/output/standard/stylelint/" class="nav-link">
+  Stylelint规范
+</a></li><li class="dropdown-subitem"><a href="/output/standard/git/" class="nav-link">
+  Git规范
+</a></li></ul></li><li class="dropdown-item"><h4>
+          项目沉淀
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/output/fruit/template/" class="nav-link">
+  React工程模板
+</a></li><li class="dropdown-subitem"><a href="/output/fruit/component-lib/" class="nav-link">
+  基于Antd的业务组件库
+</a></li></ul></li><li class="dropdown-item"><h4>
+          前端工程模板
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://github.com/netease-frontend-institute/ehr-react-template/tree/single/js" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  单页项目（react16.9 + webpack4）
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-subitem"><a href="https://github.com/netease-frontend-institute/ehr-react-template/tree/single/ts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  单页项目（react16.9 + webpack4 + Typescript）
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-subitem"><a href="https://github.com/netease-frontend-institute/ehr-react-template/tree/multiple/js" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  多页项目（react16.9 + webpack4）
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></li></ul></div></div><div class="nav-item"><a href="/tool/" class="nav-link">
+  实用工具
+</a></div> <a href="https://github.com/Heshiyu1996" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>《项目笔记》</span> <!----></p> <!----></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>工具实践</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/skill/project/webpack/" class="sidebar-link">webpack</a></li><li><a href="/skill/project/babel/" class="sidebar-link">Babel7</a></li><li><a href="/skill/project/package/" class="sidebar-link">package.json</a></li><li><a href="/skill/project/npm/" class="sidebar-link">NPM</a></li><li><a href="/skill/project/mp/" class="sidebar-link">小程序</a></li><li><a href="/skill/project/chrome-extension/" class="sidebar-link">Chrome Extension</a></li><li><a href="/skill/project/rollup/" class="sidebar-link">Rollup</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>项目踩坑</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/skill/project/react-project-note/" class="sidebar-link">项目搭建记录</a></li><li><a href="/skill/project/prettier-vue-cli/" class="sidebar-link">在vue-cli中引入Prettier</a></li><li><a href="/skill/project/compatibility/pc/" class="sidebar-link">PC兼容性方案</a></li><li><a href="/skill/project/compatibility/h5/" class="sidebar-link">H5兼容性方案</a></li><li><a href="/skill/project/other/" class="sidebar-link">其他</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="常用媒体查询兼容方案"><a href="#常用媒体查询兼容方案" class="header-anchor">#</a> 常用媒体查询兼容方案</h1> <div class="language-less line-numbers-mode"><pre class="language-less"><code><span class="token variable">@base<span class="token punctuation">:</span></span> 100 <span class="token operator">/</span> 1080vw<span class="token punctuation">;</span>
+
+<span class="token comment">/* PC 兼容 */</span>
+<span class="token atrule">@media screen and <span class="token punctuation">(</span>min-width<span class="token punctuation">:</span> 600px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+    <span class="token selector">html</span> <span class="token punctuation">{</span>
+        <span class="token property">font-size</span><span class="token punctuation">:</span> 55.5555555px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* iphone xr &amp; iphone x &amp; iphone xs */</span>
+<span class="token atrule">@media screen and <span class="token punctuation">(</span>device-width<span class="token punctuation">:</span> 414px<span class="token punctuation">)</span> and <span class="token punctuation">(</span>device-height<span class="token punctuation">:</span> 896px<span class="token punctuation">)</span> and <span class="token punctuation">(</span>-webkit-device-pixel-ratio<span class="token punctuation">:</span> 3<span class="token punctuation">)</span>,
+screen and <span class="token punctuation">(</span>device-width<span class="token punctuation">:</span> 414px<span class="token punctuation">)</span> and <span class="token punctuation">(</span>device-height<span class="token punctuation">:</span> 896px<span class="token punctuation">)</span> and <span class="token punctuation">(</span>-webkit-device-pixel-ratio<span class="token punctuation">:</span> 2<span class="token punctuation">)</span>,
+screen and <span class="token punctuation">(</span>device-width<span class="token punctuation">:</span> 375px<span class="token punctuation">)</span> and <span class="token punctuation">(</span>device-height<span class="token punctuation">:</span> 812px<span class="token punctuation">)</span> and <span class="token punctuation">(</span>-webkit-device-pixel-ratio<span class="token punctuation">:</span> 3<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+    <span class="token selector">.m-playlist</span> <span class="token punctuation">{</span>
+        <span class="token comment">// padding-bottom: 20px;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.act-modal-container .mrc-modal-container .m-act-modal .u-btn-close</span> <span class="token punctuation">{</span>
+        <span class="token property">bottom</span><span class="token punctuation">:</span> <span class="token operator">-</span>180 <span class="token operator">*</span> <span class="token variable">@base</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 滑动引导子项</span>
+    <span class="token selector">.u-slide-box.z-new2 .msg-item</span> <span class="token punctuation">{</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+        <span class="token selector">p</span> <span class="token punctuation">{</span>
+            <span class="token property">font-size</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* ip7 plus */</span>
+<span class="token atrule">@media screen and <span class="token punctuation">(</span>device-width<span class="token punctuation">:</span> 414px<span class="token punctuation">)</span> and <span class="token punctuation">(</span>device-height<span class="token punctuation">:</span> 736px<span class="token punctuation">)</span> and <span class="token punctuation">(</span>-webkit-device-pixel-ratio<span class="token punctuation">:</span> 3<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+    <span class="token selector">.m-bubble</span> <span class="token punctuation">{</span>
+        <span class="token selector">.box</span> <span class="token punctuation">{</span>
+            <span class="token comment">// top: -20vw</span>
+            <span class="token property">top</span><span class="token punctuation">:</span> <span class="token operator">-</span>12vw
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 滑动引导子项</span>
+    <span class="token selector">.u-slide-box.z-new2 .msg-item</span> <span class="token punctuation">{</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+        <span class="token selector">p</span> <span class="token punctuation">{</span>
+            <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* ip6 */</span>
+<span class="token atrule">@media screen and <span class="token punctuation">(</span>device-width<span class="token punctuation">:</span> 375px<span class="token punctuation">)</span> and <span class="token punctuation">(</span>device-height<span class="token punctuation">:</span> 667px<span class="token punctuation">)</span> and <span class="token punctuation">(</span>-webkit-device-pixel-ratio<span class="token punctuation">:</span> 2<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+    <span class="token selector">.m-bubble</span> <span class="token punctuation">{</span>
+        <span class="token selector">.box</span> <span class="token punctuation">{</span>
+            <span class="token property">top</span><span class="token punctuation">:</span> <span class="token operator">-</span>10vw
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 滑动引导子项</span>
+    <span class="token selector">.u-slide-box.z-new2 .msg-item</span> <span class="token punctuation">{</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+        <span class="token selector">p</span> <span class="token punctuation">{</span>
+            <span class="token property">font-size</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* ip6s plus： ip6的分辨率&amp;DPR 是 3 */</span>
+<span class="token atrule">@media screen and <span class="token punctuation">(</span>device-width<span class="token punctuation">:</span> 375px<span class="token punctuation">)</span> and <span class="token punctuation">(</span>device-height<span class="token punctuation">:</span> 667px<span class="token punctuation">)</span> and <span class="token punctuation">(</span>-webkit-device-pixel-ratio<span class="token punctuation">:</span> 3<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+    <span class="token selector">.m-bubble</span> <span class="token punctuation">{</span>
+        <span class="token selector">.box</span> <span class="token punctuation">{</span>
+            <span class="token property">top</span><span class="token punctuation">:</span> <span class="token operator">-</span>10vw
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 滑动引导子项</span>
+    <span class="token selector">.u-slide-box.z-new2 .msg-item</span> <span class="token punctuation">{</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+        <span class="token selector">p</span> <span class="token punctuation">{</span>
+            <span class="token property">font-size</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* ip5 se */</span>
+<span class="token atrule">@media screen and <span class="token punctuation">(</span>max-width<span class="token punctuation">:</span> 320px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+    <span class="token selector">.m-bubble</span> <span class="token punctuation">{</span>
+        <span class="token selector">.box</span> <span class="token punctuation">{</span>
+            <span class="token property">top</span><span class="token punctuation">:</span> <span class="token operator">-</span>8vw
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token selector">.m-playlist .playlist-top .count.f-vc</span> <span class="token punctuation">{</span>
+        <span class="token property">left</span><span class="token punctuation">:</span> 112px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 滑动引导子项</span>
+    <span class="token selector">.u-slide-box.z-new2 .msg-item</span> <span class="token punctuation">{</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 13px<span class="token punctuation">;</span>
+        <span class="token selector">p</span> <span class="token punctuation">{</span>
+            <span class="token property">font-size</span><span class="token punctuation">:</span> 13px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* 常规安卓1080P标准屏 */</span>
+<span class="token atrule">@media screen and <span class="token punctuation">(</span>device-width<span class="token punctuation">:</span> 360px<span class="token punctuation">)</span> and <span class="token punctuation">(</span>device-height<span class="token punctuation">:</span> 640px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+    <span class="token selector">.m-bubble</span> <span class="token punctuation">{</span>
+        <span class="token selector">.box</span> <span class="token punctuation">{</span>
+            <span class="token property">top</span><span class="token punctuation">:</span> <span class="token operator">-</span>8vw
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 滑动引导子项</span>
+    <span class="token selector">.u-slide-box.z-new2 .msg-item</span> <span class="token punctuation">{</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 14px<span class="token punctuation">;</span>
+        <span class="token selector">p</span> <span class="token punctuation">{</span>
+            <span class="token property">font-size</span><span class="token punctuation">:</span> 14px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* ==== 普通安卓360P设备 start ==== */</span>
+<span class="token atrule">@media screen and <span class="token punctuation">(</span>device-width<span class="token punctuation">:</span> 360px<span class="token punctuation">)</span> and <span class="token punctuation">(</span>max-height<span class="token punctuation">:</span> 630px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+    <span class="token selector">.m-bubble</span> <span class="token punctuation">{</span>
+        <span class="token selector">.box</span> <span class="token punctuation">{</span>
+            <span class="token property">top</span><span class="token punctuation">:</span> <span class="token operator">-</span>8vw
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 滑动引导子项</span>
+    <span class="token selector">.u-slide-box.z-new2 .msg-item</span> <span class="token punctuation">{</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 14px<span class="token punctuation">;</span>
+        <span class="token selector">p</span> <span class="token punctuation">{</span>
+            <span class="token property">font-size</span><span class="token punctuation">:</span> 14px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token atrule">@media screen and <span class="token punctuation">(</span>device-width<span class="token punctuation">:</span> 360px<span class="token punctuation">)</span> and <span class="token punctuation">(</span>max-height<span class="token punctuation">:</span> 605px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+    <span class="token selector">.m-bubble</span> <span class="token punctuation">{</span>
+        <span class="token selector">.box</span> <span class="token punctuation">{</span>
+            <span class="token property">top</span><span class="token punctuation">:</span> <span class="token operator">-</span>13vw
+        <span class="token punctuation">}</span>
+        <span class="token selector">.ctrl.f-hc</span> <span class="token punctuation">{</span>
+            <span class="token property">bottom</span><span class="token punctuation">:</span> 9vw<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 滑动引导子项</span>
+    <span class="token selector">.u-slide-box.z-new2 .msg-item</span> <span class="token punctuation">{</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 14px<span class="token punctuation">;</span>
+        <span class="token selector">p</span> <span class="token punctuation">{</span>
+            <span class="token property">font-size</span><span class="token punctuation">:</span> 14px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token atrule">@media screen and <span class="token punctuation">(</span>device-width<span class="token punctuation">:</span> 360px<span class="token punctuation">)</span> and <span class="token punctuation">(</span>max-height<span class="token punctuation">:</span> 590px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+    <span class="token selector">.m-bubble</span> <span class="token punctuation">{</span>
+        <span class="token selector">.box</span> <span class="token punctuation">{</span>
+            <span class="token property">top</span><span class="token punctuation">:</span> <span class="token operator">-</span>13vw
+        <span class="token punctuation">}</span>
+        <span class="token selector">.ctrl.f-hc</span> <span class="token punctuation">{</span>
+            <span class="token property">bottom</span><span class="token punctuation">:</span> 3vw<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 滑动引导子项</span>
+    <span class="token selector">.u-slide-box.z-new2 .msg-item</span> <span class="token punctuation">{</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 14px<span class="token punctuation">;</span>
+        <span class="token selector">p</span> <span class="token punctuation">{</span>
+            <span class="token property">font-size</span><span class="token punctuation">:</span> 14px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* ==== 普通安卓360P设备 end ==== */</span>
+
+<span class="token comment">/* 安卓1080P长屏 */</span>
+<span class="token atrule">@media screen and <span class="token punctuation">(</span>device-width<span class="token punctuation">:</span> 360px<span class="token punctuation">)</span> and <span class="token punctuation">(</span>min-height<span class="token punctuation">:</span> 700px<span class="token punctuation">)</span> and <span class="token punctuation">(</span>-webkit-device-pixel-ratio<span class="token punctuation">:</span> 3<span class="token punctuation">)</span></span><span class="token punctuation">{</span>
+    <span class="token selector">.m-bubble</span> <span class="token punctuation">{</span>
+        <span class="token selector">.box</span> <span class="token punctuation">{</span>
+            <span class="token property">top</span><span class="token punctuation">:</span> <span class="token operator">-</span>6vw
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 滑动引导子项</span>
+    <span class="token selector">.u-slide-box.z-new2 .msg-item</span> <span class="token punctuation">{</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 14px<span class="token punctuation">;</span>
+        <span class="token selector">p</span> <span class="token punctuation">{</span>
+            <span class="token property">font-size</span><span class="token punctuation">:</span> 14px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* 华为P30 pro */</span>
+<span class="token atrule">@media screen and <span class="token punctuation">(</span>device-width<span class="token punctuation">:</span> 360px<span class="token punctuation">)</span> and <span class="token punctuation">(</span>device-height<span class="token punctuation">:</span> 780px<span class="token punctuation">)</span> and <span class="token punctuation">(</span>-webkit-device-pixel-ratio<span class="token punctuation">:</span> 3<span class="token punctuation">)</span></span><span class="token punctuation">{</span>
+    <span class="token selector">.m-bubble</span> <span class="token punctuation">{</span>
+        <span class="token selector">.box</span> <span class="token punctuation">{</span>
+            <span class="token property">top</span><span class="token punctuation">:</span> <span class="token operator">-</span>2vw<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.m-playlist .playlist-top .count.f-vc</span> <span class="token punctuation">{</span>
+        <span class="token property">left</span><span class="token punctuation">:</span> 128px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.m-playlist .playlist-box .playlist-item .info .song-artist.f-thide</span> <span class="token punctuation">{</span>
+        <span class="token property">bottom</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 滑动引导子项</span>
+    <span class="token selector">.u-slide-box.z-new2 .msg-item</span> <span class="token punctuation">{</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 14px<span class="token punctuation">;</span>
+        <span class="token selector">p</span> <span class="token punctuation">{</span>
+            <span class="token property">font-size</span><span class="token punctuation">:</span> 14px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* 魅族 某古老机型 */</span>
+<span class="token atrule">@media screen and <span class="token punctuation">(</span>device-width<span class="token punctuation">:</span> 384px<span class="token punctuation">)</span> and <span class="token punctuation">(</span>device-height<span class="token punctuation">:</span> 640px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+    <span class="token selector">.m-bubble</span> <span class="token punctuation">{</span>
+        <span class="token selector">.box</span> <span class="token punctuation">{</span>
+            <span class="token property">top</span><span class="token punctuation">:</span> <span class="token operator">-</span>12vw
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 滑动引导子项</span>
+    <span class="token selector">.u-slide-box.z-new2 .msg-item</span> <span class="token punctuation">{</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 14px<span class="token punctuation">;</span>
+        <span class="token selector">p</span> <span class="token punctuation">{</span>
+            <span class="token property">font-size</span><span class="token punctuation">:</span> 14px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* 小米 8 */</span>
+<span class="token atrule">@media screen and <span class="token punctuation">(</span>device-width<span class="token punctuation">:</span> 393px<span class="token punctuation">)</span> and <span class="token punctuation">(</span>device-height<span class="token punctuation">:</span> 818px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+    <span class="token comment">// 滑动引导子项</span>
+    <span class="token selector">.u-slide-box.z-new2 .msg-item</span> <span class="token punctuation">{</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 14px<span class="token punctuation">;</span>
+        <span class="token selector">p</span> <span class="token punctuation">{</span>
+            <span class="token property">font-size</span><span class="token punctuation">:</span> 14px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br><span class="line-number">194</span><br><span class="line-number">195</span><br><span class="line-number">196</span><br><span class="line-number">197</span><br><span class="line-number">198</span><br><span class="line-number">199</span><br><span class="line-number">200</span><br><span class="line-number">201</span><br><span class="line-number">202</span><br><span class="line-number">203</span><br><span class="line-number">204</span><br><span class="line-number">205</span><br><span class="line-number">206</span><br><span class="line-number">207</span><br><span class="line-number">208</span><br><span class="line-number">209</span><br><span class="line-number">210</span><br><span class="line-number">211</span><br><span class="line-number">212</span><br><span class="line-number">213</span><br><span class="line-number">214</span><br><span class="line-number">215</span><br><span class="line-number">216</span><br><span class="line-number">217</span><br><span class="line-number">218</span><br><span class="line-number">219</span><br><span class="line-number">220</span><br><span class="line-number">221</span><br><span class="line-number">222</span><br><span class="line-number">223</span><br><span class="line-number">224</span><br><span class="line-number">225</span><br><span class="line-number">226</span><br><span class="line-number">227</span><br><span class="line-number">228</span><br><span class="line-number">229</span><br><span class="line-number">230</span><br><span class="line-number">231</span><br><span class="line-number">232</span><br><span class="line-number">233</span><br><span class="line-number">234</span><br><span class="line-number">235</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">7/1/2020, 8:18:24 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.65a89ca6.js" defer></script><script src="/assets/js/2.f29da71a.js" defer></script><script src="/assets/js/129.db52353b.js" defer></script>
+  </body>
+</html>

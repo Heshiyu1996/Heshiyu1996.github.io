@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Node-MySQL | Heshiyu&#39;s Blog</title>
+    <meta name="description" content=" ">
+    <meta name="generator" content="VuePress 1.3.1">
+    <link rel="icon" href="/favicon.png">
+  <link rel="manifest" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="mask-icon" href="/favicon.png" color="#3eaf7c">
+  <meta http-quiv="pragma" cotent="no-cache">
+  <meta http-quiv="expires" cotent="0">
+  <meta http-quiv="pragma" cotent="no-cache, must-revalidate">
+    
+    <link rel="preload" href="/assets/css/0.styles.7633c2a9.css" as="style"><link rel="preload" href="/assets/js/app.65a89ca6.js" as="script"><link rel="preload" href="/assets/js/2.f29da71a.js" as="script"><link rel="preload" href="/assets/js/8.d8294feb.js" as="script"><link rel="prefetch" href="/assets/js/10.ebc89002.js"><link rel="prefetch" href="/assets/js/100.b4d2cdbc.js"><link rel="prefetch" href="/assets/js/101.2a441379.js"><link rel="prefetch" href="/assets/js/102.5ac60b9a.js"><link rel="prefetch" href="/assets/js/103.d772d6de.js"><link rel="prefetch" href="/assets/js/104.b92f7f37.js"><link rel="prefetch" href="/assets/js/105.9180eeac.js"><link rel="prefetch" href="/assets/js/106.48ed1bd6.js"><link rel="prefetch" href="/assets/js/107.4bd0524f.js"><link rel="prefetch" href="/assets/js/108.bf1365c7.js"><link rel="prefetch" href="/assets/js/109.b02701bf.js"><link rel="prefetch" href="/assets/js/11.c13c4caa.js"><link rel="prefetch" href="/assets/js/110.4ef10069.js"><link rel="prefetch" href="/assets/js/111.b2a819eb.js"><link rel="prefetch" href="/assets/js/112.6f657cdd.js"><link rel="prefetch" href="/assets/js/113.097402d8.js"><link rel="prefetch" href="/assets/js/114.a7773533.js"><link rel="prefetch" href="/assets/js/115.31961814.js"><link rel="prefetch" href="/assets/js/116.3671260a.js"><link rel="prefetch" href="/assets/js/117.e5152a44.js"><link rel="prefetch" href="/assets/js/118.6d22e43a.js"><link rel="prefetch" href="/assets/js/119.7b87075e.js"><link rel="prefetch" href="/assets/js/12.1445d451.js"><link rel="prefetch" href="/assets/js/120.7657b280.js"><link rel="prefetch" href="/assets/js/121.62cd7313.js"><link rel="prefetch" href="/assets/js/122.69527952.js"><link rel="prefetch" href="/assets/js/123.012c549f.js"><link rel="prefetch" href="/assets/js/124.bc043df7.js"><link rel="prefetch" href="/assets/js/125.0aeb0830.js"><link rel="prefetch" href="/assets/js/126.ed4b07ba.js"><link rel="prefetch" href="/assets/js/127.77e47004.js"><link rel="prefetch" href="/assets/js/128.b997f4f6.js"><link rel="prefetch" href="/assets/js/129.db52353b.js"><link rel="prefetch" href="/assets/js/13.430a6558.js"><link rel="prefetch" href="/assets/js/130.7ad688f0.js"><link rel="prefetch" href="/assets/js/131.73ce6693.js"><link rel="prefetch" href="/assets/js/132.f913fab6.js"><link rel="prefetch" href="/assets/js/133.6e124659.js"><link rel="prefetch" href="/assets/js/134.5d39fce0.js"><link rel="prefetch" href="/assets/js/135.df76cef1.js"><link rel="prefetch" href="/assets/js/136.49c17fd8.js"><link rel="prefetch" href="/assets/js/137.c963605a.js"><link rel="prefetch" href="/assets/js/138.0960be37.js"><link rel="prefetch" href="/assets/js/139.7561af94.js"><link rel="prefetch" href="/assets/js/14.c4c23519.js"><link rel="prefetch" href="/assets/js/140.5b1e0955.js"><link rel="prefetch" href="/assets/js/141.6e812e39.js"><link rel="prefetch" href="/assets/js/142.70c1f944.js"><link rel="prefetch" href="/assets/js/143.30526f1b.js"><link rel="prefetch" href="/assets/js/144.de4cb928.js"><link rel="prefetch" href="/assets/js/145.8314da63.js"><link rel="prefetch" href="/assets/js/146.7e34fe61.js"><link rel="prefetch" href="/assets/js/147.d347a372.js"><link rel="prefetch" href="/assets/js/148.91b524de.js"><link rel="prefetch" href="/assets/js/149.7377742f.js"><link rel="prefetch" href="/assets/js/15.a14f00ac.js"><link rel="prefetch" href="/assets/js/150.a9afd2ce.js"><link rel="prefetch" href="/assets/js/151.61adf142.js"><link rel="prefetch" href="/assets/js/152.a15f492b.js"><link rel="prefetch" href="/assets/js/153.d2cee6f9.js"><link rel="prefetch" href="/assets/js/154.873f2d81.js"><link rel="prefetch" href="/assets/js/155.6f4a84c4.js"><link rel="prefetch" href="/assets/js/156.61ba33b3.js"><link rel="prefetch" href="/assets/js/157.2c8c648a.js"><link rel="prefetch" href="/assets/js/158.d5836763.js"><link rel="prefetch" href="/assets/js/159.54178633.js"><link rel="prefetch" href="/assets/js/16.478cb84e.js"><link rel="prefetch" href="/assets/js/17.0ec5677a.js"><link rel="prefetch" href="/assets/js/18.14d58603.js"><link rel="prefetch" href="/assets/js/19.0b1366e3.js"><link rel="prefetch" href="/assets/js/20.117d1412.js"><link rel="prefetch" href="/assets/js/21.abe24aa9.js"><link rel="prefetch" href="/assets/js/22.722cd643.js"><link rel="prefetch" href="/assets/js/23.4f37818d.js"><link rel="prefetch" href="/assets/js/24.c5bea59b.js"><link rel="prefetch" href="/assets/js/25.2ea169c1.js"><link rel="prefetch" href="/assets/js/26.b98a4fd4.js"><link rel="prefetch" href="/assets/js/27.05de9df1.js"><link rel="prefetch" href="/assets/js/28.90fb3911.js"><link rel="prefetch" href="/assets/js/29.8c68c2f2.js"><link rel="prefetch" href="/assets/js/3.db4d2d0b.js"><link rel="prefetch" href="/assets/js/30.37011b6a.js"><link rel="prefetch" href="/assets/js/31.50fb896d.js"><link rel="prefetch" href="/assets/js/32.988ac9ff.js"><link rel="prefetch" href="/assets/js/33.78e07c85.js"><link rel="prefetch" href="/assets/js/34.5f855160.js"><link rel="prefetch" href="/assets/js/35.096238b1.js"><link rel="prefetch" href="/assets/js/36.fd76455c.js"><link rel="prefetch" href="/assets/js/37.ce7766e3.js"><link rel="prefetch" href="/assets/js/38.c1a5a827.js"><link rel="prefetch" href="/assets/js/39.27b1ef4f.js"><link rel="prefetch" href="/assets/js/4.9d001fc4.js"><link rel="prefetch" href="/assets/js/40.37854300.js"><link rel="prefetch" href="/assets/js/41.76754f35.js"><link rel="prefetch" href="/assets/js/42.0e01d4f6.js"><link rel="prefetch" href="/assets/js/43.ed84031e.js"><link rel="prefetch" href="/assets/js/44.71c89784.js"><link rel="prefetch" href="/assets/js/45.09966fb0.js"><link rel="prefetch" href="/assets/js/46.ef42514c.js"><link rel="prefetch" href="/assets/js/47.ebd96f8e.js"><link rel="prefetch" href="/assets/js/48.f05a4d1c.js"><link rel="prefetch" href="/assets/js/49.ba9c225f.js"><link rel="prefetch" href="/assets/js/5.7ae6c8a4.js"><link rel="prefetch" href="/assets/js/50.78837426.js"><link rel="prefetch" href="/assets/js/51.8d868e0c.js"><link rel="prefetch" href="/assets/js/52.d17af8b3.js"><link rel="prefetch" href="/assets/js/53.7c8cb809.js"><link rel="prefetch" href="/assets/js/54.70181b6d.js"><link rel="prefetch" href="/assets/js/55.9015f413.js"><link rel="prefetch" href="/assets/js/56.b061d11e.js"><link rel="prefetch" href="/assets/js/57.83fe971c.js"><link rel="prefetch" href="/assets/js/58.39a9b9a1.js"><link rel="prefetch" href="/assets/js/59.c96d7058.js"><link rel="prefetch" href="/assets/js/6.17e2a2cf.js"><link rel="prefetch" href="/assets/js/60.544cf086.js"><link rel="prefetch" href="/assets/js/61.b2ec0106.js"><link rel="prefetch" href="/assets/js/62.e2b8d1e4.js"><link rel="prefetch" href="/assets/js/63.6157df7b.js"><link rel="prefetch" href="/assets/js/64.ccda49ed.js"><link rel="prefetch" href="/assets/js/65.da8f39df.js"><link rel="prefetch" href="/assets/js/66.40cc94e6.js"><link rel="prefetch" href="/assets/js/67.7f1424f4.js"><link rel="prefetch" href="/assets/js/68.2ed9ae6a.js"><link rel="prefetch" href="/assets/js/69.bf6264e5.js"><link rel="prefetch" href="/assets/js/7.d9a21c27.js"><link rel="prefetch" href="/assets/js/70.fe73bea0.js"><link rel="prefetch" href="/assets/js/71.6734edf7.js"><link rel="prefetch" href="/assets/js/72.212ef0e9.js"><link rel="prefetch" href="/assets/js/73.f24a7182.js"><link rel="prefetch" href="/assets/js/74.325f0109.js"><link rel="prefetch" href="/assets/js/75.15619ba3.js"><link rel="prefetch" href="/assets/js/76.f42c5bf2.js"><link rel="prefetch" href="/assets/js/77.4bc28314.js"><link rel="prefetch" href="/assets/js/78.74d629b1.js"><link rel="prefetch" href="/assets/js/79.56d81e69.js"><link rel="prefetch" href="/assets/js/80.fafbf927.js"><link rel="prefetch" href="/assets/js/81.20757e97.js"><link rel="prefetch" href="/assets/js/82.e7aec67a.js"><link rel="prefetch" href="/assets/js/83.4199ce20.js"><link rel="prefetch" href="/assets/js/84.233ee461.js"><link rel="prefetch" href="/assets/js/85.94e19582.js"><link rel="prefetch" href="/assets/js/86.99ee15a8.js"><link rel="prefetch" href="/assets/js/87.0a112635.js"><link rel="prefetch" href="/assets/js/88.05c57f8d.js"><link rel="prefetch" href="/assets/js/89.94013c48.js"><link rel="prefetch" href="/assets/js/9.11a15702.js"><link rel="prefetch" href="/assets/js/90.331bb884.js"><link rel="prefetch" href="/assets/js/91.54712a27.js"><link rel="prefetch" href="/assets/js/92.8691c112.js"><link rel="prefetch" href="/assets/js/93.724e7fc2.js"><link rel="prefetch" href="/assets/js/94.bd37ab36.js"><link rel="prefetch" href="/assets/js/95.bfa036f5.js"><link rel="prefetch" href="/assets/js/96.4ff4071b.js"><link rel="prefetch" href="/assets/js/97.ce72eea3.js"><link rel="prefetch" href="/assets/js/98.d14b037b.js"><link rel="prefetch" href="/assets/js/99.68b4e5e1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7633c2a9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Heshiyu's Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/overview/" class="nav-link">
+  总览
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端积累" class="dropdown-title"><span class="title">前端积累</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/skill/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/skill/js/" class="nav-link">
+  JS
+</a></li><li class="dropdown-subitem"><a href="/skill/web/" class="nav-link">
+  Web/浏览器
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/skill/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/skill/nodejs/" class="nav-link router-link-active">
+  NodeJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          笔记
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/personal/" class="nav-link">
+  个人笔记
+</a></li><li class="dropdown-subitem"><a href="/skill/project/" class="nav-link">
+  项目笔记
+</a></li><li class="dropdown-subitem"><a href="/skill/note/" class="nav-link">
+  读书/参会心得
+</a></li></ul></li><li class="dropdown-item"><h4>
+          前端周边
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/computeracy/" class="nav-link">
+  计算机
+</a></li><li class="dropdown-subitem"><a href="/skill/algorithm/" class="nav-link">
+  算法
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程产出" class="dropdown-title"><span class="title">工程产出</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端规范
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/output/standard/css/" class="nav-link">
+  CSS规范
+</a></li><li class="dropdown-subitem"><a href="/output/standard/js/" class="nav-link">
+  JS规范
+</a></li><li class="dropdown-subitem"><a href="/output/standard/eslint/" class="nav-link">
+  ESLint &amp; Prettier规范
+</a></li><li class="dropdown-subitem"><a href="/output/standard/stylelint/" class="nav-link">
+  Stylelint规范
+</a></li><li class="dropdown-subitem"><a href="/output/standard/git/" class="nav-link">
+  Git规范
+</a></li></ul></li><li class="dropdown-item"><h4>
+          项目沉淀
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/output/fruit/template/" class="nav-link">
+  React工程模板
+</a></li><li class="dropdown-subitem"><a href="/output/fruit/component-lib/" class="nav-link">
+  基于Antd的业务组件库
+</a></li></ul></li><li class="dropdown-item"><h4>
+          前端工程模板
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://github.com/netease-frontend-institute/ehr-react-template/tree/single/js" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  单页项目（react16.9 + webpack4）
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-subitem"><a href="https://github.com/netease-frontend-institute/ehr-react-template/tree/single/ts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  单页项目（react16.9 + webpack4 + Typescript）
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-subitem"><a href="https://github.com/netease-frontend-institute/ehr-react-template/tree/multiple/js" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  多页项目（react16.9 + webpack4）
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></li></ul></div></div><div class="nav-item"><a href="/tool/" class="nav-link">
+  实用工具
+</a></div> <a href="https://github.com/Heshiyu1996" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/overview/" class="nav-link">
+  总览
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端积累" class="dropdown-title"><span class="title">前端积累</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/skill/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/skill/js/" class="nav-link">
+  JS
+</a></li><li class="dropdown-subitem"><a href="/skill/web/" class="nav-link">
+  Web/浏览器
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/skill/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/skill/nodejs/" class="nav-link router-link-active">
+  NodeJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          笔记
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/personal/" class="nav-link">
+  个人笔记
+</a></li><li class="dropdown-subitem"><a href="/skill/project/" class="nav-link">
+  项目笔记
+</a></li><li class="dropdown-subitem"><a href="/skill/note/" class="nav-link">
+  读书/参会心得
+</a></li></ul></li><li class="dropdown-item"><h4>
+          前端周边
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/computeracy/" class="nav-link">
+  计算机
+</a></li><li class="dropdown-subitem"><a href="/skill/algorithm/" class="nav-link">
+  算法
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程产出" class="dropdown-title"><span class="title">工程产出</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端规范
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/output/standard/css/" class="nav-link">
+  CSS规范
+</a></li><li class="dropdown-subitem"><a href="/output/standard/js/" class="nav-link">
+  JS规范
+</a></li><li class="dropdown-subitem"><a href="/output/standard/eslint/" class="nav-link">
+  ESLint &amp; Prettier规范
+</a></li><li class="dropdown-subitem"><a href="/output/standard/stylelint/" class="nav-link">
+  Stylelint规范
+</a></li><li class="dropdown-subitem"><a href="/output/standard/git/" class="nav-link">
+  Git规范
+</a></li></ul></li><li class="dropdown-item"><h4>
+          项目沉淀
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/output/fruit/template/" class="nav-link">
+  React工程模板
+</a></li><li class="dropdown-subitem"><a href="/output/fruit/component-lib/" class="nav-link">
+  基于Antd的业务组件库
+</a></li></ul></li><li class="dropdown-item"><h4>
+          前端工程模板
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://github.com/netease-frontend-institute/ehr-react-template/tree/single/js" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  单页项目（react16.9 + webpack4）
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-subitem"><a href="https://github.com/netease-frontend-institute/ehr-react-template/tree/single/ts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  单页项目（react16.9 + webpack4 + Typescript）
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-subitem"><a href="https://github.com/netease-frontend-institute/ehr-react-template/tree/multiple/js" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  多页项目（react16.9 + webpack4）
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></li></ul></div></div><div class="nav-item"><a href="/tool/" class="nav-link">
+  实用工具
+</a></div> <a href="https://github.com/Heshiyu1996" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>《NodeJS》</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/skill/nodejs/multi-process/" class="sidebar-link">NodeJS中的多进程、集群</a></li><li><a href="/skill/nodejs/koa/" class="sidebar-link">koa2</a></li><li><a href="/skill/nodejs/node-mysql/" class="active sidebar-link">Node-MySQL</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/skill/nodejs/node-mysql/#准备工具" class="sidebar-link">准备工具</a></li><li class="sidebar-sub-header"><a href="/skill/nodejs/node-mysql/#安装mysql" class="sidebar-link">安装MySQL</a></li><li class="sidebar-sub-header"><a href="/skill/nodejs/node-mysql/#安装workbench" class="sidebar-link">安装WorkBench</a></li><li class="sidebar-sub-header"><a href="/skill/nodejs/node-mysql/#在node-js中的写法" class="sidebar-link">在Node.js中的写法</a></li><li class="sidebar-sub-header"><a href="/skill/nodejs/node-mysql/#postman的使用" class="sidebar-link">Postman的使用</a></li><li class="sidebar-sub-header"><a href="/skill/nodejs/node-mysql/#我的git仓库（node-mysql）" class="sidebar-link">我的git仓库（node-mysql）</a></li></ul></li><li><a href="/skill/nodejs/other/" class="sidebar-link">其他</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="node-mysql"><a href="#node-mysql" class="header-anchor">#</a> Node-MySQL</h1> <blockquote><p>很早之前就知道nodeJS也可以写后台，而且也有很成熟的http框架。也想自己搭建一个服务器来访问自己的本地数据库，平时可以联调下post请求之类的</p> <p>更新时间： 2019-01-06</p></blockquote> <p>我是导航条：
+<a href="#%E5%87%86%E5%A4%87%E5%B7%A5%E5%85%B7">准备工具</a> -&gt; <a href="#%E5%AE%89%E8%A3%85MySQL">安装MySQL</a> -&gt; <a href="#%E5%AE%89%E8%A3%85WorkBench">安装WorkBench</a> -&gt; <a href="#%E5%9C%A8Node.js%E4%B8%AD%E7%9A%84%E5%86%99%E6%B3%95">在Node.js中的写法</a> -&gt; <a href="#Postman%E7%9A%84%E4%BD%BF%E7%94%A8">Postman的使用</a></p> <h2 id="准备工具"><a href="#准备工具" class="header-anchor">#</a> 准备工具</h2> <ul><li>Node.js
+（http://nodejs.cn/download/）</li> <li>Mysql
+（https://dev.mysql.com/downloads/mysql/）</li> <li>WorkBench
+（https://dev.mysql.com/downloads/workbench/）</li> <li>Postman
+（https://www.getpostman.com/apps）</li></ul> <h2 id="安装mysql"><a href="#安装mysql" class="header-anchor">#</a> 安装MySQL</h2> <p>1、打开dmg，一直下一步。注册本地数据库的账号、密码；</p> <p>2、开启Mysql，在“系统偏好设置” - “mysql” - “start Mysql server”；</p> <p>3、将Mysql加入系统环境变量，否则会提示“mysql commod not found”</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 进入mysql的bin文件夹</span>
+cd <span class="token operator">/</span>usr<span class="token operator">/</span>local<span class="token operator">/</span>mysql<span class="token operator">/</span>bin
+
+<span class="token comment">// 编辑环境变量文件</span>
+vim <span class="token operator">~</span><span class="token operator">/</span><span class="token punctuation">.</span>bash_profile
+
+<span class="token comment">// 加入以下语句</span>
+<span class="token constant">PATH</span><span class="token operator">=</span>$<span class="token constant">PATH</span><span class="token operator">:</span><span class="token operator">/</span>usr<span class="token operator">/</span>local<span class="token operator">/</span>mysql<span class="token operator">/</span>bin
+
+<span class="token comment">// 使其生效</span>
+source <span class="token operator">~</span><span class="token operator">/</span><span class="token punctuation">.</span>bash_profile
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>4、修改密码：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token constant">SET</span> <span class="token constant">PASSWORD</span> <span class="token constant">FOR</span> <span class="token string">'root'</span>@<span class="token string">'localhost'</span> <span class="token operator">=</span> <span class="token constant">PASSWORD</span><span class="token punctuation">(</span><span class="token string">'newpass'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="安装workbench"><a href="#安装workbench" class="header-anchor">#</a> 安装WorkBench</h2> <p>打开dmg，一直下一步。一般会自动扫描你本地的mysql版本，如果没有，就点击“+”，并填入刚刚注册的数据库账号密码
+<img src="/assets/img/Node-Mysql-1.93d5de75.png" alt="alt"> <img src="/assets/img/Node-Mysql-2.3163acaf.png" alt="alt"></p> <h2 id="在node-js中的写法"><a href="#在node-js中的写法" class="header-anchor">#</a> 在Node.js中的写法</h2> <h3 id="准备的npm包"><a href="#准备的npm包" class="header-anchor">#</a> 准备的npm包</h3> <div class="language-json line-numbers-mode"><pre class="language-json"><code>  <span class="token property">&quot;dependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;body-parser&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^1.18.3&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;cookie-parser&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^1.4.3&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;express&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.16.4&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;multer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^1.4.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;mysql&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^2.16.0&quot;</span>
+  <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="大致思路"><a href="#大致思路" class="header-anchor">#</a> 大致思路</h3> <p>1、引入express、body-parser中间件、数据库连接模块</p> <p>2、实例化express对象，并对其进行body-parser注册</p> <p>3、对实例进行操作</p> <p>4、最后执行实例的listen方法，并制定监听的端口</p> <p>（项目代码：https://github.com/qq450979309/node-mysql ）</p> <h3 id="注意的点"><a href="#注意的点" class="header-anchor">#</a> 注意的点</h3> <ul><li>如果没有注册body-parser，那将<code>req.body</code>将是 <strong>undefined</strong> 的</li></ul> <h2 id="postman的使用"><a href="#postman的使用" class="header-anchor">#</a> Postman的使用</h2> <h3 id="以post为例"><a href="#以post为例" class="header-anchor">#</a> 以Post为例</h3> <p>1、设置请求的Headers，<code>Content-Type</code>设置为<code>application/x-www-form-urlencoded</code> <img src="/assets/img/Node-Mysql-3.ee94c88e.png" alt="alt"></p> <p>2、设置请求的Body的key/value，并将body的类型设置为<code>x-www-form-urlencoded</code> <img src="/assets/img/Node-Mysql-4.771e144b.png" alt="alt"></p> <p>3、可以从本地node服务器接受到来自postman的请求，并且通过<code>req.body</code>可以拿到参数
+<img src="/assets/img/Node-Mysql-5.6994177b.png" alt="alt"></p> <p>注意：</p> <p>问题一：设置Content-Type无效</p> <p>例如：改成application/json，但是一直是application/x-www-form-urlencoded</p> <p>解决办法：那只能切换到<code>raw</code>里写下json数据（<strong>key值记得用双引号</strong>）
+<img src="/assets/img/Node-Mysql-6.4c883e7e.png" alt="alt"></p> <p>在这过程也参考了网友的一些文章，才得以顺利搭建，总结的链接如下：</p> <p>1、《NodeJs针对Express框架配置Mysql进行数据库操作》</p> <p>（https://www.cnblogs.com/eczhou/p/7845529.html）</p> <p>2、《express做登录验证获取req.body为空对象问题》</p> <p>（https://blog.csdn.net/TyrionJ/article/details/81990048）</p> <p>3、《nodejs 写接口的步骤》</p> <p>（https://blog.csdn.net/weixin_42193625/article/details/80447390）</p> <h2 id="我的git仓库（node-mysql）"><a href="#我的git仓库（node-mysql）" class="header-anchor">#</a> 我的git仓库（node-mysql）</h2> <p>利用node.js搭建本地服务器，并连接数据库
+<a href="https://github.com/Heshiyu1996/node-mysql" target="_blank" rel="noopener noreferrer">node-mysql<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">6/29/2020, 7:57:54 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/skill/nodejs/koa/" class="prev">
+        koa2
+      </a></span> <span class="next"><a href="/skill/nodejs/other/">
+        其他
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.65a89ca6.js" defer></script><script src="/assets/js/2.f29da71a.js" defer></script><script src="/assets/js/8.d8294feb.js" defer></script>
+  </body>
+</html>

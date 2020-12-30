@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CommonJS、ES6模块规范 | Heshiyu&#39;s Blog</title>
+    <meta name="description" content=" ">
+    <meta name="generator" content="VuePress 1.3.1">
+    <link rel="icon" href="/favicon.png">
+  <link rel="manifest" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="mask-icon" href="/favicon.png" color="#3eaf7c">
+  <meta http-quiv="pragma" cotent="no-cache">
+  <meta http-quiv="expires" cotent="0">
+  <meta http-quiv="pragma" cotent="no-cache, must-revalidate">
+    
+    <link rel="preload" href="/assets/css/0.styles.7633c2a9.css" as="style"><link rel="preload" href="/assets/js/app.65a89ca6.js" as="script"><link rel="preload" href="/assets/js/2.f29da71a.js" as="script"><link rel="preload" href="/assets/js/109.b02701bf.js" as="script"><link rel="prefetch" href="/assets/js/10.ebc89002.js"><link rel="prefetch" href="/assets/js/100.b4d2cdbc.js"><link rel="prefetch" href="/assets/js/101.2a441379.js"><link rel="prefetch" href="/assets/js/102.5ac60b9a.js"><link rel="prefetch" href="/assets/js/103.d772d6de.js"><link rel="prefetch" href="/assets/js/104.b92f7f37.js"><link rel="prefetch" href="/assets/js/105.9180eeac.js"><link rel="prefetch" href="/assets/js/106.48ed1bd6.js"><link rel="prefetch" href="/assets/js/107.4bd0524f.js"><link rel="prefetch" href="/assets/js/108.bf1365c7.js"><link rel="prefetch" href="/assets/js/11.c13c4caa.js"><link rel="prefetch" href="/assets/js/110.4ef10069.js"><link rel="prefetch" href="/assets/js/111.b2a819eb.js"><link rel="prefetch" href="/assets/js/112.6f657cdd.js"><link rel="prefetch" href="/assets/js/113.097402d8.js"><link rel="prefetch" href="/assets/js/114.a7773533.js"><link rel="prefetch" href="/assets/js/115.31961814.js"><link rel="prefetch" href="/assets/js/116.3671260a.js"><link rel="prefetch" href="/assets/js/117.e5152a44.js"><link rel="prefetch" href="/assets/js/118.6d22e43a.js"><link rel="prefetch" href="/assets/js/119.7b87075e.js"><link rel="prefetch" href="/assets/js/12.1445d451.js"><link rel="prefetch" href="/assets/js/120.7657b280.js"><link rel="prefetch" href="/assets/js/121.62cd7313.js"><link rel="prefetch" href="/assets/js/122.69527952.js"><link rel="prefetch" href="/assets/js/123.012c549f.js"><link rel="prefetch" href="/assets/js/124.bc043df7.js"><link rel="prefetch" href="/assets/js/125.0aeb0830.js"><link rel="prefetch" href="/assets/js/126.ed4b07ba.js"><link rel="prefetch" href="/assets/js/127.77e47004.js"><link rel="prefetch" href="/assets/js/128.b997f4f6.js"><link rel="prefetch" href="/assets/js/129.db52353b.js"><link rel="prefetch" href="/assets/js/13.430a6558.js"><link rel="prefetch" href="/assets/js/130.7ad688f0.js"><link rel="prefetch" href="/assets/js/131.73ce6693.js"><link rel="prefetch" href="/assets/js/132.f913fab6.js"><link rel="prefetch" href="/assets/js/133.6e124659.js"><link rel="prefetch" href="/assets/js/134.5d39fce0.js"><link rel="prefetch" href="/assets/js/135.df76cef1.js"><link rel="prefetch" href="/assets/js/136.49c17fd8.js"><link rel="prefetch" href="/assets/js/137.c963605a.js"><link rel="prefetch" href="/assets/js/138.0960be37.js"><link rel="prefetch" href="/assets/js/139.7561af94.js"><link rel="prefetch" href="/assets/js/14.c4c23519.js"><link rel="prefetch" href="/assets/js/140.5b1e0955.js"><link rel="prefetch" href="/assets/js/141.6e812e39.js"><link rel="prefetch" href="/assets/js/142.70c1f944.js"><link rel="prefetch" href="/assets/js/143.30526f1b.js"><link rel="prefetch" href="/assets/js/144.de4cb928.js"><link rel="prefetch" href="/assets/js/145.8314da63.js"><link rel="prefetch" href="/assets/js/146.7e34fe61.js"><link rel="prefetch" href="/assets/js/147.d347a372.js"><link rel="prefetch" href="/assets/js/148.91b524de.js"><link rel="prefetch" href="/assets/js/149.7377742f.js"><link rel="prefetch" href="/assets/js/15.a14f00ac.js"><link rel="prefetch" href="/assets/js/150.a9afd2ce.js"><link rel="prefetch" href="/assets/js/151.61adf142.js"><link rel="prefetch" href="/assets/js/152.a15f492b.js"><link rel="prefetch" href="/assets/js/153.d2cee6f9.js"><link rel="prefetch" href="/assets/js/154.873f2d81.js"><link rel="prefetch" href="/assets/js/155.6f4a84c4.js"><link rel="prefetch" href="/assets/js/156.61ba33b3.js"><link rel="prefetch" href="/assets/js/157.2c8c648a.js"><link rel="prefetch" href="/assets/js/158.d5836763.js"><link rel="prefetch" href="/assets/js/159.54178633.js"><link rel="prefetch" href="/assets/js/16.478cb84e.js"><link rel="prefetch" href="/assets/js/17.0ec5677a.js"><link rel="prefetch" href="/assets/js/18.14d58603.js"><link rel="prefetch" href="/assets/js/19.0b1366e3.js"><link rel="prefetch" href="/assets/js/20.117d1412.js"><link rel="prefetch" href="/assets/js/21.abe24aa9.js"><link rel="prefetch" href="/assets/js/22.722cd643.js"><link rel="prefetch" href="/assets/js/23.4f37818d.js"><link rel="prefetch" href="/assets/js/24.c5bea59b.js"><link rel="prefetch" href="/assets/js/25.2ea169c1.js"><link rel="prefetch" href="/assets/js/26.b98a4fd4.js"><link rel="prefetch" href="/assets/js/27.05de9df1.js"><link rel="prefetch" href="/assets/js/28.90fb3911.js"><link rel="prefetch" href="/assets/js/29.8c68c2f2.js"><link rel="prefetch" href="/assets/js/3.db4d2d0b.js"><link rel="prefetch" href="/assets/js/30.37011b6a.js"><link rel="prefetch" href="/assets/js/31.50fb896d.js"><link rel="prefetch" href="/assets/js/32.988ac9ff.js"><link rel="prefetch" href="/assets/js/33.78e07c85.js"><link rel="prefetch" href="/assets/js/34.5f855160.js"><link rel="prefetch" href="/assets/js/35.096238b1.js"><link rel="prefetch" href="/assets/js/36.fd76455c.js"><link rel="prefetch" href="/assets/js/37.ce7766e3.js"><link rel="prefetch" href="/assets/js/38.c1a5a827.js"><link rel="prefetch" href="/assets/js/39.27b1ef4f.js"><link rel="prefetch" href="/assets/js/4.9d001fc4.js"><link rel="prefetch" href="/assets/js/40.37854300.js"><link rel="prefetch" href="/assets/js/41.76754f35.js"><link rel="prefetch" href="/assets/js/42.0e01d4f6.js"><link rel="prefetch" href="/assets/js/43.ed84031e.js"><link rel="prefetch" href="/assets/js/44.71c89784.js"><link rel="prefetch" href="/assets/js/45.09966fb0.js"><link rel="prefetch" href="/assets/js/46.ef42514c.js"><link rel="prefetch" href="/assets/js/47.ebd96f8e.js"><link rel="prefetch" href="/assets/js/48.f05a4d1c.js"><link rel="prefetch" href="/assets/js/49.ba9c225f.js"><link rel="prefetch" href="/assets/js/5.7ae6c8a4.js"><link rel="prefetch" href="/assets/js/50.78837426.js"><link rel="prefetch" href="/assets/js/51.8d868e0c.js"><link rel="prefetch" href="/assets/js/52.d17af8b3.js"><link rel="prefetch" href="/assets/js/53.7c8cb809.js"><link rel="prefetch" href="/assets/js/54.70181b6d.js"><link rel="prefetch" href="/assets/js/55.9015f413.js"><link rel="prefetch" href="/assets/js/56.b061d11e.js"><link rel="prefetch" href="/assets/js/57.83fe971c.js"><link rel="prefetch" href="/assets/js/58.39a9b9a1.js"><link rel="prefetch" href="/assets/js/59.c96d7058.js"><link rel="prefetch" href="/assets/js/6.17e2a2cf.js"><link rel="prefetch" href="/assets/js/60.544cf086.js"><link rel="prefetch" href="/assets/js/61.b2ec0106.js"><link rel="prefetch" href="/assets/js/62.e2b8d1e4.js"><link rel="prefetch" href="/assets/js/63.6157df7b.js"><link rel="prefetch" href="/assets/js/64.ccda49ed.js"><link rel="prefetch" href="/assets/js/65.da8f39df.js"><link rel="prefetch" href="/assets/js/66.40cc94e6.js"><link rel="prefetch" href="/assets/js/67.7f1424f4.js"><link rel="prefetch" href="/assets/js/68.2ed9ae6a.js"><link rel="prefetch" href="/assets/js/69.bf6264e5.js"><link rel="prefetch" href="/assets/js/7.d9a21c27.js"><link rel="prefetch" href="/assets/js/70.fe73bea0.js"><link rel="prefetch" href="/assets/js/71.6734edf7.js"><link rel="prefetch" href="/assets/js/72.212ef0e9.js"><link rel="prefetch" href="/assets/js/73.f24a7182.js"><link rel="prefetch" href="/assets/js/74.325f0109.js"><link rel="prefetch" href="/assets/js/75.15619ba3.js"><link rel="prefetch" href="/assets/js/76.f42c5bf2.js"><link rel="prefetch" href="/assets/js/77.4bc28314.js"><link rel="prefetch" href="/assets/js/78.74d629b1.js"><link rel="prefetch" href="/assets/js/79.56d81e69.js"><link rel="prefetch" href="/assets/js/8.d8294feb.js"><link rel="prefetch" href="/assets/js/80.fafbf927.js"><link rel="prefetch" href="/assets/js/81.20757e97.js"><link rel="prefetch" href="/assets/js/82.e7aec67a.js"><link rel="prefetch" href="/assets/js/83.4199ce20.js"><link rel="prefetch" href="/assets/js/84.233ee461.js"><link rel="prefetch" href="/assets/js/85.94e19582.js"><link rel="prefetch" href="/assets/js/86.99ee15a8.js"><link rel="prefetch" href="/assets/js/87.0a112635.js"><link rel="prefetch" href="/assets/js/88.05c57f8d.js"><link rel="prefetch" href="/assets/js/89.94013c48.js"><link rel="prefetch" href="/assets/js/9.11a15702.js"><link rel="prefetch" href="/assets/js/90.331bb884.js"><link rel="prefetch" href="/assets/js/91.54712a27.js"><link rel="prefetch" href="/assets/js/92.8691c112.js"><link rel="prefetch" href="/assets/js/93.724e7fc2.js"><link rel="prefetch" href="/assets/js/94.bd37ab36.js"><link rel="prefetch" href="/assets/js/95.bfa036f5.js"><link rel="prefetch" href="/assets/js/96.4ff4071b.js"><link rel="prefetch" href="/assets/js/97.ce72eea3.js"><link rel="prefetch" href="/assets/js/98.d14b037b.js"><link rel="prefetch" href="/assets/js/99.68b4e5e1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7633c2a9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Heshiyu's Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/overview/" class="nav-link">
+  总览
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端积累" class="dropdown-title"><span class="title">前端积累</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/skill/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/skill/js/" class="nav-link router-link-active">
+  JS
+</a></li><li class="dropdown-subitem"><a href="/skill/web/" class="nav-link">
+  Web/浏览器
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/skill/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/skill/nodejs/" class="nav-link">
+  NodeJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          笔记
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/personal/" class="nav-link">
+  个人笔记
+</a></li><li class="dropdown-subitem"><a href="/skill/project/" class="nav-link">
+  项目笔记
+</a></li><li class="dropdown-subitem"><a href="/skill/note/" class="nav-link">
+  读书/参会心得
+</a></li></ul></li><li class="dropdown-item"><h4>
+          前端周边
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/computeracy/" class="nav-link">
+  计算机
+</a></li><li class="dropdown-subitem"><a href="/skill/algorithm/" class="nav-link">
+  算法
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程产出" class="dropdown-title"><span class="title">工程产出</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端规范
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/output/standard/css/" class="nav-link">
+  CSS规范
+</a></li><li class="dropdown-subitem"><a href="/output/standard/js/" class="nav-link">
+  JS规范
+</a></li><li class="dropdown-subitem"><a href="/output/standard/eslint/" class="nav-link">
+  ESLint &amp; Prettier规范
+</a></li><li class="dropdown-subitem"><a href="/output/standard/stylelint/" class="nav-link">
+  Stylelint规范
+</a></li><li class="dropdown-subitem"><a href="/output/standard/git/" class="nav-link">
+  Git规范
+</a></li></ul></li><li class="dropdown-item"><h4>
+          项目沉淀
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/output/fruit/template/" class="nav-link">
+  React工程模板
+</a></li><li class="dropdown-subitem"><a href="/output/fruit/component-lib/" class="nav-link">
+  基于Antd的业务组件库
+</a></li></ul></li><li class="dropdown-item"><h4>
+          前端工程模板
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://github.com/netease-frontend-institute/ehr-react-template/tree/single/js" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  单页项目（react16.9 + webpack4）
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-subitem"><a href="https://github.com/netease-frontend-institute/ehr-react-template/tree/single/ts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  单页项目（react16.9 + webpack4 + Typescript）
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-subitem"><a href="https://github.com/netease-frontend-institute/ehr-react-template/tree/multiple/js" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  多页项目（react16.9 + webpack4）
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></li></ul></div></div><div class="nav-item"><a href="/tool/" class="nav-link">
+  实用工具
+</a></div> <a href="https://github.com/Heshiyu1996" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/overview/" class="nav-link">
+  总览
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端积累" class="dropdown-title"><span class="title">前端积累</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/skill/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/skill/js/" class="nav-link router-link-active">
+  JS
+</a></li><li class="dropdown-subitem"><a href="/skill/web/" class="nav-link">
+  Web/浏览器
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/skill/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/skill/nodejs/" class="nav-link">
+  NodeJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          笔记
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/personal/" class="nav-link">
+  个人笔记
+</a></li><li class="dropdown-subitem"><a href="/skill/project/" class="nav-link">
+  项目笔记
+</a></li><li class="dropdown-subitem"><a href="/skill/note/" class="nav-link">
+  读书/参会心得
+</a></li></ul></li><li class="dropdown-item"><h4>
+          前端周边
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/computeracy/" class="nav-link">
+  计算机
+</a></li><li class="dropdown-subitem"><a href="/skill/algorithm/" class="nav-link">
+  算法
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程产出" class="dropdown-title"><span class="title">工程产出</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端规范
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/output/standard/css/" class="nav-link">
+  CSS规范
+</a></li><li class="dropdown-subitem"><a href="/output/standard/js/" class="nav-link">
+  JS规范
+</a></li><li class="dropdown-subitem"><a href="/output/standard/eslint/" class="nav-link">
+  ESLint &amp; Prettier规范
+</a></li><li class="dropdown-subitem"><a href="/output/standard/stylelint/" class="nav-link">
+  Stylelint规范
+</a></li><li class="dropdown-subitem"><a href="/output/standard/git/" class="nav-link">
+  Git规范
+</a></li></ul></li><li class="dropdown-item"><h4>
+          项目沉淀
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/output/fruit/template/" class="nav-link">
+  React工程模板
+</a></li><li class="dropdown-subitem"><a href="/output/fruit/component-lib/" class="nav-link">
+  基于Antd的业务组件库
+</a></li></ul></li><li class="dropdown-item"><h4>
+          前端工程模板
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://github.com/netease-frontend-institute/ehr-react-template/tree/single/js" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  单页项目（react16.9 + webpack4）
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-subitem"><a href="https://github.com/netease-frontend-institute/ehr-react-template/tree/single/ts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  单页项目（react16.9 + webpack4 + Typescript）
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-subitem"><a href="https://github.com/netease-frontend-institute/ehr-react-template/tree/multiple/js" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  多页项目（react16.9 + webpack4）
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></li></ul></div></div><div class="nav-item"><a href="/tool/" class="nav-link">
+  实用工具
+</a></div> <a href="https://github.com/Heshiyu1996" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>《JS》</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/skill/js/async-plan/" class="sidebar-link">JS异步解决方案的发展历程</a></li><li><a href="/skill/js/design-patterns/" class="sidebar-link">JS设计模式</a></li><li><a href="/skill/js/dom/" class="sidebar-link">常用的DOM操作方法</a></li><li><a href="/skill/js/event-loop/" class="sidebar-link">事件循环（EventLoop）</a></li><li><a href="/skill/js/modular/" class="active sidebar-link">CommonJS、ES6模块规范</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/skill/js/modular/#commonjs" class="sidebar-link">CommonJS</a></li><li class="sidebar-sub-header"><a href="/skill/js/modular/#es6-module" class="sidebar-link">ES6 Module</a></li><li class="sidebar-sub-header"><a href="/skill/js/modular/#commonjs和es6-module的区别" class="sidebar-link">CommonJS和ES6 Module的区别</a></li></ul></li><li><a href="/skill/js/regex/" class="sidebar-link">JS正则表达式</a></li><li><a href="/skill/js/class/" class="sidebar-link">Class（类）</a></li><li><a href="/skill/js/typescript/" class="sidebar-link">Typescript基本知识</a></li><li><a href="/skill/js/other/" class="sidebar-link">其他</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="commonjs、es6模块规范"><a href="#commonjs、es6模块规范" class="header-anchor">#</a> CommonJS、ES6模块规范</h1> <blockquote><p>JS模块规范</p></blockquote> <p></p><div class="table-of-contents"><ul><li><a href="#commonjs、es6模块规范">CommonJS、ES6模块规范</a><ul><li><a href="#commonjs">CommonJS</a></li><li><a href="#es6-module">ES6 Module</a></li><li><a href="#commonjs和es6-module的区别">CommonJS和ES6 Module的区别</a></li></ul></li></ul></div><p></p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>四种模块规范：</p> <ul><li>CommonJS</li> <li>ES6 模块</li></ul></div> <p><code>AMD</code>、<code>CMD</code>不在此赘述，<a href="/skill/js/modular/AMDCMD.html">可前往查看以往笔记</a></p> <h2 id="commonjs"><a href="#commonjs" class="header-anchor">#</a> CommonJS</h2> <p><strong>CommonJS</strong>最初只为服务端而设计，直到有了Browserify，这意味着客户端的代码也可以遵守<strong>CommonJS</strong>标准来写了。</p> <blockquote><p>Browserify是一个运行在Node.js环境下的模块打包工具。它可以将CommonJS模块，打包为浏览器可以运行的单个文件。</p></blockquote> <h3 id="封装成commonjs模块的区别（对比-通过script标签引入-）"><a href="#封装成commonjs模块的区别（对比-通过script标签引入-）" class="header-anchor">#</a> 封装成CommonJS模块的区别（对比“通过script标签引入”）</h3> <p><strong>CommonJS中规定每个文件就是一个模块。</strong></p> <p><strong>通过script标签引入的脚本</strong>的顶层作用域是全局作用域，在进行变量及函数声明时会污染全局环境；</p> <p><strong>CommonJS模块</strong>会形成一个属于模块自身的作用域，所有的变量及函数只由自己能访问。</p> <blockquote><p>对于<strong>CommonJS</strong>，<code>模块向外暴露自身</code>的唯一方式——导出（<code>module.exports</code>）。</p></blockquote> <h3 id="导出（module-exports）"><a href="#导出（module-exports）" class="header-anchor">#</a> 导出（module.exports）</h3> <p><code>module对象</code>用于存放当前模块的信息</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/* 为了更好理解
+var module = {
+    exports: {}
+}
+var exports = module.exports // 对象浅拷贝
+*/</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token operator">...</span><span class="token punctuation">}</span> <span class="token comment">// 用来指定该模块要对外暴露哪些内容</span>
+
+exports<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'heshiyu'</span> <span class="token comment">// 也可直接使用exports</span>
+<span class="token comment">// 注意：（不遵循的话，可能会导出失效）</span>
+<span class="token comment">// 1、不要直接给exports赋值；</span>
+<span class="token comment">// 2、不要module.exports和exports混合用</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>建议将该语句放在模块的末尾</p></div> <h3 id="导入（require）"><a href="#导入（require）" class="header-anchor">#</a> 导入（require）</h3> <p>在<strong>CommonJS</strong>中使用<code>require</code>进行模块导入</p> <blockquote><p>将要导入的模块的<strong>module.exports对象</strong>作为<strong>require函数的返回值</strong>进行返回</p></blockquote> <p>当我们<strong>require</strong>一个模块时，会有两种情况：</p> <ul><li><strong>是第一次被加载</strong>。
+<ul><li>此时会首先执行该模块，然后导出内容</li></ul></li> <li><strong>曾被加载过</strong>。
+<ul><li>此时该模块的代码不会再次执行，直接导出上次执行后得到的结果</li></ul></li></ul> <p>这是因为<code>module</code>对象里有一个<code>loaded</code>属性（<em>默认为false</em>），用于<strong>记录该模块是否被加载过</strong>。</p> <p>可以直接使用require</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./task.js'</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>也可以接受表达式</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">var</span> filename <span class="token operator">=</span> <span class="token string">'math.js'</span>
+<span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./'</span> <span class="token operator">+</span> filename<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="es6-module"><a href="#es6-module" class="header-anchor">#</a> ES6 Module</h2> <p>ES6 Module也是将每个文件作为一个模块，每个模块拥有自身的作用域。（同时会采取严格模式）</p> <h3 id="导出（export）"><a href="#导出（export）" class="header-anchor">#</a> 导出（export）</h3> <p>export有两种形式：</p> <ul><li><strong>命名导出</strong></li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code>   <span class="token comment">// 写法一：</span>
+   <span class="token keyword">export</span> <span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token string">'heshiyu'</span>
+   <span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">add</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>a <span class="token operator">+</span> b<span class="token punctuation">)</span>
+
+   <span class="token comment">// 写法二：</span>
+   <span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token string">'heshiyu'</span>
+   <span class="token keyword">const</span> <span class="token function-variable function">add</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>a <span class="token operator">+</span> b<span class="token punctuation">)</span>
+   <span class="token keyword">export</span> <span class="token punctuation">{</span> name<span class="token punctuation">,</span> add <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><ul><li><strong>默认导出</strong></li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">'heshiyu'</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">add</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>a <span class="token operator">+</span> b<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>export default</strong>可以理解为：对外输出了一个名为default的变量。</p> <h3 id="导入（import）"><a href="#导入（import）" class="header-anchor">#</a> 导入（import）</h3> <ul><li><strong>命名导入</strong> <ul><li>导入的效果相当于在当前作用域下声明了这些变量，并且不可以对其进行更改，也就是所有导入的变量都是<strong>只读</strong>的。</li> <li>在导入多个变量时，还可以采用整体导入的方式：</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// calculator.js</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token string">'heshiyu'</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">add</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>a <span class="token operator">+</span> b<span class="token punctuation">)</span>
+
+<span class="token comment">// index.js</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> calculator <span class="token keyword">from</span> <span class="token string">'./calculator.js'</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>calculator<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// 5</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div></li> <li><strong>默认导入</strong><div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// calculator.js</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">'heshiyu'</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">add</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>a <span class="token operator">+</span> b<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// index.js</span>
+<span class="token keyword">import</span> myCalculator <span class="token keyword">from</span> <span class="token string">'./calculator.js'</span>
+calculator<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div></li></ul> <p>两种可以混合起来导入：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>其中，<strong>React</strong>对应模块（<em>react</em>）的默认导出，<strong>Component</strong>对应模块（<em>react</em>）的命名导出中的一个变量。</p> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>这里的<strong>React</strong>（即默认导入）必须写在前面，不能颠倒顺序，否则会语法错误！</p></div> <h3 id="复合导入（即导入又导出）"><a href="#复合导入（即导入又导出）" class="header-anchor">#</a> 复合导入（即导入又导出）</h3> <p>有时会有<strong>专门用来集合所有页面或组件的入口文件</strong>：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 以下两种写法只对那些通过“命名导出”方式导出的变量有效</span>
+<span class="token keyword">export</span> <span class="token punctuation">{</span> name<span class="token punctuation">,</span> add <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./calculator.js'</span>
+<span class="token keyword">export</span> <span class="token operator">*</span> <span class="token keyword">from</span> <span class="token string">'./calculator.js'</span>
+
+<span class="token comment">// 对于“默认导出”方式导出的变量可以这样写：</span>
+<span class="token keyword">import</span> myCalculator <span class="token keyword">from</span> <span class="token string">'./calculator.js'</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> myCalculator
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="commonjs和es6-module的区别"><a href="#commonjs和es6-module的区别" class="header-anchor">#</a> CommonJS和ES6 Module的区别</h2> <h3 id="动态vs静态"><a href="#动态vs静态" class="header-anchor">#</a> 动态vs静态</h3> <p><code>CommonJS</code>：</p> <ul><li>是动态的（require的模块路径可以动态指定）</li> <li>模块依赖关系的建立发生在代码<strong>运行阶段</strong>（模块被执行前，并没有办法明确确定依赖关系）</li></ul> <p><code>ES6 Module</code>：</p> <ul><li>是静态的</li> <li>模块依赖关系的建立发生在代码<strong>编译阶段</strong>（运行前）；</li></ul> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>优势：</p> <ul><li>有利于Webpack的<code>Tree Shaking</code></li> <li>未使用的代码检测、排除
+<ul><li>通过静态分析，在打包时去掉这些未曾使用过的模块，以减小打包资源体积</li></ul></li> <li>模块变量类型检查</li> <li>直接导入变量，而不是一个对象
+<ul><li>减少引用层级，程序效率更高</li></ul></li></ul></div> <h3 id="值的拷贝vs动态映射"><a href="#值的拷贝vs动态映射" class="header-anchor">#</a> 值的拷贝vs动态映射</h3> <p><code>CommonJS</code>：导出的是值的拷贝<code>（可写，但影响的只是副本）</code></p> <p><code>ES6 Module</code>：导出的是值的动态映射<code>（只读）</code></p> <blockquote><p>为什么<strong>CommonJS是值的拷贝</strong>？<a href="/skill/js/note/webpack-experience/#webpack模块打包原理">可前往查看《webpack模块打包原理》</a></p></blockquote> <h3 id="this指向"><a href="#this指向" class="header-anchor">#</a> this指向</h3> <p><code>CommonJS</code>：顶层this<code>指向当前模块</code></p> <p><code>ES6 Module</code>：顶层this<code>指向undefined</code></p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">4/23/2020, 2:34:05 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/skill/js/event-loop/" class="prev">
+        事件循环（EventLoop）
+      </a></span> <span class="next"><a href="/skill/js/regex/">
+        JS正则表达式
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.65a89ca6.js" defer></script><script src="/assets/js/2.f29da71a.js" defer></script><script src="/assets/js/109.b02701bf.js" defer></script>
+  </body>
+</html>
